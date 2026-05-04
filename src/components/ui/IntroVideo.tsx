@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { markIntroDone } from "@/lib/introSignal";
 
 export function IntroVideo() {
   const [visible, setVisible] = useState(true);
@@ -17,8 +18,20 @@ export function IntroVideo() {
     }
   }, [visible]);
 
-  const handleEnd = () => setVisible(false);
-  const handleSkip = () => setVisible(false);
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const isMobileOrTablet = window.matchMedia("(max-width: 1024px)").matches;
+    v.src = isMobileOrTablet ? "/media/introMobile.mp4" : "/media/intro.mp4";
+    v.load();
+    v.play().catch(() => {});
+  }, []);
+
+  const dismiss = () => {
+    markIntroDone();
+    setVisible(false);
+  };
+
   const toggleMute = () => {
     const v = videoRef.current;
     if (!v) return;
@@ -33,22 +46,20 @@ export function IntroVideo() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="fixed inset-0 z-[9999] bg-black flex items-center justify-center"
+          className="fixed inset-0 z-9999 bg-black flex items-center justify-center"
         >
           <video
             ref={videoRef}
-            src="/media/intro.mp4"
-            autoPlay
             muted
             playsInline
-            onEnded={handleEnd}
+            onEnded={dismiss}
             className="w-full h-full object-cover"
           />
 
           <button
             type="button"
-            onClick={handleSkip}
-            className="absolute top-6 right-6 px-4 py-2 text-sm font-[family-name:var(--font-oswald)] tracking-wider text-cream/90 bg-black/40 backdrop-blur-sm border border-cream/30 rounded-full hover:bg-black/60 transition"
+            onClick={dismiss}
+            className="absolute top-6 right-6 px-4 py-2 text-sm font-(family-name:--font-oswald) tracking-wider text-cream/90 bg-black/40 backdrop-blur-sm border border-cream/30 rounded-full hover:bg-black/60 transition"
           >
             SKIP INTRO →
           </button>

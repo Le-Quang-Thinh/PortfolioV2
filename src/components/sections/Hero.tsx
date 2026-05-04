@@ -1,7 +1,7 @@
 import { portfolioData } from "@/data/portfolio";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { TVMockup } from "@/components/ui/TVMockup";
+import { FeaturedProjectsCarousel } from "@/components/ui/FeaturedProjectsCarousel";
 import { StickyNote } from "@/components/ui/StickyNote";
 import { ArrowRight } from "lucide-react";
 
@@ -20,12 +20,12 @@ export function Hero() {
       />
 
       <div className="grid lg:grid-cols-[1fr_460px] gap-8 lg:gap-12 items-center mb-9">
-        <FadeIn>
+        <FadeIn waitForIntro>
           <div className="inline-flex items-center gap-2 border border-khaki rounded-sm px-3 py-1 font-mono text-[0.7rem] tracking-[0.12em] uppercase text-khaki mb-[14px] before:content-['//'] before:text-rust before:mr-[2px]">
             {profile.role}
           </div>
 
-          <h1 className="font-display text-[4rem] md:text-[5rem] xl:text-[5.6rem] leading-[0.95] tracking-[0.02em] text-ink mb-[10px]">
+          <h1 className="font-heading text-[4rem] md:text-[5rem] xl:text-[5.6rem] leading-[0.95] tracking-[0.02em] text-ink mb-[16px]">
             {first}
             <br />
             {middle}
@@ -56,13 +56,13 @@ export function Hero() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.15} className="hidden lg:block relative">
+        <FadeIn waitForIntro delay={0.15} className="hidden lg:block relative">
           <StickyNote>{stickyNote}</StickyNote>
-          <TVMockup />
+          <FeaturedProjectsCarousel />
         </FadeIn>
       </div>
 
-      <FadeIn delay={0.25}>
+      <FadeIn waitForIntro delay={0.25}>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border-2 border-ink rounded-lg overflow-hidden">
           {kpis.map((k, i) => (
             <div

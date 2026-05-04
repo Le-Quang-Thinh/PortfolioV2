@@ -71,7 +71,11 @@ export interface SkillCategory {
 
 export type ProjectThumbType = 'tv' | 'web' | 'cms' | 'cast'
 
-export type ClassificationLevel = 'SECRET' | 'CONFIDENTIAL' | 'INTERNAL' | 'PUBLIC'
+export type ClassificationLevel =
+  | 'SECRET'
+  | 'CONFIDENTIAL'
+  | 'INTERNAL'
+  | 'PUBLIC'
 
 export interface Project {
   id: string
@@ -90,6 +94,8 @@ export interface Project {
   duration?: string
   responsibilities?: string[]
   outcomes?: string[]
+  // Product showcase — placeholder names, edit freely in portfolio.ts
+  releases?: { name: string; platform?: string }[]
 }
 
 export type StampTone = 'rust' | 'navy' | 'khaki'
@@ -249,7 +255,12 @@ export const portfolioData: PortfolioData = {
         position: 'top'
       },
       { icon: 'Laptop', name: 'Web', sub: 'React / Next.js', position: 'left' },
-      { icon: 'Smartphone', name: 'Mobile', sub: 'iOS / Android', position: 'right' },
+      {
+        icon: 'Smartphone',
+        name: 'Mobile',
+        sub: 'iOS / Android',
+        position: 'right'
+      },
       {
         icon: 'Cast',
         name: 'Chromecast',
@@ -314,7 +325,7 @@ export const portfolioData: PortfolioData = {
       id: 'exp-2020-2022',
       stampText: 'Achieved',
       stampTone: 'navy',
-      period: '2020 — 2022',
+      period: '2020 — Present',
       title: 'Front-End Developer',
       company: 'Youthdev Company · Web Platform & CMS',
       highlights: [
@@ -391,14 +402,22 @@ export const portfolioData: PortfolioData = {
         'Engineered lazy-loading and module-splitting architecture reducing bundle size from 80MB to under 12MB (80%+ reduction)',
         'Integrated analytics pipelines: Mux, Firebase Analytics, Google Analytics 4, and KCPA event tracking',
         'Led performance profiling to eliminate memory leaks and rendering bottlenecks on constrained TV hardware',
-        'Collaborated with backend, QA, and product teams to deliver and certify all production store releases',
+        'Collaborated with backend, QA, and product teams to deliver and certify all production store releases'
       ],
       outcomes: [
         'Published to 4 major TV ecosystems: LG WebOS, Samsung Tizen, VIZIO SmartCast, and Chromecast',
         '80%+ bundle reduction — from 80MB down to under 12MB',
         'End-to-end DRM coverage via Widevine and FairPlay across all sessions',
-        'Millions of active users served across all TV platforms',
+        'Millions of active users served across all TV platforms'
       ],
+      releases: [
+        { name: 'SCTV TV', platform: 'SmartTV, Hotel' },
+        {
+          name: 'Amasian',
+          platform: 'SmartTV, Hotel'
+        },
+        { name: 'OndemanKorea', platform: 'SmartTV' }
+      ]
     },
     {
       id: 'ott-web',
@@ -427,14 +446,19 @@ export const portfolioData: PortfolioData = {
         'Delivered OneSignal push notification system and DFP ad integration across all tenants',
         'Architected multi-tenant configuration system enabling rapid platform whitelabeling and isolated data',
         'Set up GitLab CI/CD pipelines and Docker workflows for consistent, reliable deployments',
-        'Mentored one junior front-end developer on platform architecture and delivery practices',
+        'Mentored one junior front-end developer on platform architecture and delivery practices'
       ],
       outcomes: [
         '3 production payment gateways integrated: Stripe, PayPal, and MoMo',
         'Millions of active users served across all web streaming platforms',
         'SSR-optimized for search engine indexing across all platform domains',
-        'Enterprise-grade multi-tenant architecture supporting multiple brands from one codebase',
+        'Enterprise-grade multi-tenant architecture supporting multiple brands from one codebase'
       ],
+      releases: [
+        { name: 'OnDemandViet', platform: 'OTT Web' },
+        { name: 'SCTV Online', platform: 'OTT Web' },
+        { name: 'Illuon', platform: 'OTT Web' }
+      ]
     },
     {
       id: 'cms',
@@ -462,14 +486,18 @@ export const portfolioData: PortfolioData = {
         'Developed live content scheduling system for managing broadcast and on-demand content calendars',
         'Created subscription and plan management workflows supporting end-to-end content monetization',
         'Built modular content interfaces: videos, articles, series, episodes, categories, and tags',
-        'Wrote Cypress E2E test suite covering all critical admin flows and content management operations',
+        'Wrote Cypress E2E test suite covering all critical admin flows and content management operations'
       ],
       outcomes: [
         'Multi-tenant RBAC serving multiple content teams with fully isolated access and data',
         'AWS S3 multipart upload system supporting large video and media file ingestion',
         'Live scheduling engine enabling real-time broadcast and on-demand content management',
-        'Cypress E2E test coverage across all critical admin and content management workflows',
+        'Cypress E2E test coverage across all critical admin and content management workflows'
       ],
+      releases: [
+        { name: 'OTT Admin Console', platform: 'CMS' },
+        { name: 'Live Schedule', platform: 'CMS' }
+      ]
     },
     {
       id: 'chromecast',
@@ -496,14 +524,15 @@ export const portfolioData: PortfolioData = {
         'Built seamless playback state synchronization between sender (mobile/web) and receiver (TV) devices',
         'Integrated HLS adaptive streaming and DRM-protected content playback on the receiver side',
         'Handled cast session management, state transitions, resume playback, and error recovery flows',
-        'Tested across multiple Chromecast hardware generations and Android TV smart display devices',
+        'Tested across multiple Chromecast hardware generations and Android TV smart display devices'
       ],
       outcomes: [
         'Google Cast SDK integration shipped across web and mobile sender applications',
         'KCPA analytics instrumented across all active cast sessions end-to-end',
         'Synchronized playback state across mobile, web, and TV receiver with zero drift',
-        'Production-deployed supporting millions of Chromecast streaming sessions',
+        'Production-deployed supporting millions of Chromecast streaming sessions'
       ],
+      releases: [{ name: 'OnDemandKorea Cast', platform: 'Chromecast' }]
     }
   ],
 
@@ -591,10 +620,10 @@ export const portfolioData: PortfolioData = {
 
   education: [
     {
-      id: 'edu-vnuhcm',
+      id: 'edu-ttn',
       icon: 'GraduationCap',
       degree: 'Information Technology',
-      school: 'University of Science – VNUHCM',
+      school: 'Tây Nguyên University – TNU',
       years: "Bachelor's Degree · 2015 – 2019"
     }
   ],
@@ -602,3 +631,74 @@ export const portfolioData: PortfolioData = {
   contactSubtitle:
     'Open to senior front-end, OTT engineering, or Smart TV specialist roles. Always interested in challenging streaming platform projects.'
 }
+
+export type MemoryAccent = 'cyan' | 'magenta' | 'amber' | 'lime' | 'violet'
+
+export interface MemoryChapter {
+  id: string
+  index: string
+  title: string
+  banner: string
+  date: string
+  description: string
+  image: string
+  accent: MemoryAccent
+}
+
+export const memoryArchive: MemoryChapter[] = [
+  {
+    id: 'chapter-01',
+    index: '01',
+    title: 'ECHO OF THE STARLIGHT VOW',
+    banner: 'INTO THE MEMORY PROGRAM',
+    date: '2099.04.30',
+    description:
+      'A fragmented dream surfaces from the archive — twin moons over a silent terminal, a promise spoken in a language no one remembers. The signal is clear; the meaning is not.',
+    image: '/images/memory/01.jpg',
+    accent: 'cyan'
+  },
+  {
+    id: 'chapter-02',
+    index: '02',
+    title: 'NEON GHOSTS OF SECTOR ZERO',
+    banner: 'INTO THE MEMORY PROGRAM',
+    date: '2099.05.18',
+    description:
+      'Recovery agents drift through abandoned corridors of the lower city. Each footstep echoes against rain-slick chrome; each glance summons a face that should not still be smiling.',
+    image: '/images/memory/02.jpg',
+    accent: 'magenta'
+  },
+  {
+    id: 'chapter-03',
+    index: '03',
+    title: 'CROWN OF THE SUNSET ENGINE',
+    banner: 'INTO THE MEMORY PROGRAM',
+    date: '2099.07.02',
+    description:
+      'High atop the eastern spire, the engine awakens. Its halo paints the dusk in gold — and within the light, the operator finds a memory that was never theirs.',
+    image: '/images/memory/03.jpg',
+    accent: 'amber'
+  },
+  {
+    id: 'chapter-04',
+    index: '04',
+    title: 'SILENT BLOOM PROTOCOL',
+    banner: 'INTO THE MEMORY PROGRAM',
+    date: '2099.08.21',
+    description:
+      'The greenhouse below the surface answers only to a heartbeat. When she places her palm on the glass, the entire colony begins to sing — softly, then all at once.',
+    image: '/images/memory/04.jpg',
+    accent: 'lime'
+  },
+  {
+    id: 'chapter-05',
+    index: '05',
+    title: 'AURORA OF THE FORGOTTEN COURT',
+    banner: 'INTO THE MEMORY PROGRAM',
+    date: '2099.10.09',
+    description:
+      'A coronation lost between timelines — banners that never fell, an empress crowned by static. The archive cannot say if she ever existed, only that she still waits.',
+    image: '/images/memory/05.jpg',
+    accent: 'violet'
+  }
+]

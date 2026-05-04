@@ -8,6 +8,16 @@ import type { Project, ClassificationLevel } from "@/data/portfolio";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { BlueprintSchematic } from "@/components/ui/BlueprintSchematic";
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 12 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.38, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] } },
+};
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.12 } },
+};
+
 interface ProjectModalProps {
   project: Project | null;
   onClose: () => void;
@@ -78,7 +88,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="fixed inset-0 z-[9998] bg-ink/75 backdrop-blur-sm"
             onClick={onClose}
             aria-hidden="true"
@@ -91,16 +101,21 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             aria-modal="true"
             aria-labelledby="modal-title"
             aria-describedby="modal-subtitle"
-            initial={{ opacity: 0, y: 24, scale: 0.975 }}
+            initial={{ opacity: 0, y: 32, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 16, scale: 0.975 }}
-            transition={{ duration: 0.55, ease: "easeOut" }}
+            exit={{ opacity: 0, y: 20, scale: 0.97 }}
+            transition={{ type: "spring", damping: 28, stiffness: 320, mass: 0.85, opacity: { duration: 0.2, ease: "easeOut" } }}
             className="fixed inset-0 z-[9998] flex items-center justify-center p-4 md:p-6 pointer-events-none"
           >
-            <div className="relative w-full max-w-[1040px] max-h-[92vh] overflow-y-auto bg-cream rounded-xl shadow-[0_24px_80px_rgba(0,0,0,0.5)] pointer-events-auto before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[4px] before:bg-rust before:rounded-t-xl before:z-10">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              className="relative w-full max-w-[1040px] max-h-[92vh] overflow-y-auto bg-cream rounded-xl shadow-[0_24px_80px_rgba(0,0,0,0.5)] pointer-events-auto before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[4px] before:bg-rust before:rounded-t-xl before:z-10"
+            >
 
               {/* ── HEADER ── */}
-              <div className={`relative h-[180px] flex flex-col justify-end overflow-hidden ${thumbGradient[project.thumbType]}`}>
+              <motion.div variants={sectionVariants} className={`relative h-[180px] flex flex-col justify-end overflow-hidden ${thumbGradient[project.thumbType]}`}>
                 {/* Blueprint schematic behind header */}
                 <div className="absolute inset-0 opacity-[0.08]">
                   <BlueprintSchematic thumbType={project.thumbType} className="w-full h-full" />
@@ -155,10 +170,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               {/* ── METADATA STRIP ── */}
-              <div className="flex flex-wrap items-center gap-3 px-6 py-3 bg-cream-dark border-b border-ink-soft/10">
+              <motion.div variants={sectionVariants} className="flex flex-wrap items-center gap-3 px-6 py-3 bg-cream-dark border-b border-ink-soft/10">
                 {project.role && (
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-[0.58rem] tracking-[0.1em] text-khaki uppercase">Role</span>
@@ -175,10 +190,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </span>
                   </div>
                 )}
-              </div>
+              </motion.div>
 
               {/* ── BODY ── */}
-              <div className="relative px-6 py-7">
+              <motion.div variants={sectionVariants} className="relative px-6 py-7">
                 {/* Blueprint schematic background */}
                 <div className="absolute inset-0 opacity-[0.055] pointer-events-none overflow-hidden rounded-b-xl">
                   <BlueprintSchematic thumbType={project.thumbType} className="w-full h-full" />
@@ -272,10 +287,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </ul>
                   )}
                 </div>
-              </div>
+              </motion.div>
 
               {/* ── FOOTER ── */}
-              <div className="flex flex-wrap items-center justify-center gap-3 px-6 py-4 bg-cream-dark border-t border-ink-soft/10 rounded-b-xl">
+              <motion.div variants={sectionVariants} className="flex flex-wrap items-center justify-center gap-3 px-6 py-4 bg-cream-dark border-t border-ink-soft/10 rounded-b-xl">
                 {["Production Grade Quality", "Architecture Approved", "Delivered at Scale"].map((label) => (
                   <span
                     key={label}
@@ -284,8 +299,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     {label}
                   </span>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </>
       )}
