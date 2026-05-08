@@ -9,6 +9,7 @@ export type SocialIconKey =
   | 'mail'
   | 'phone'
   | 'location'
+  | 'cv'
 
 export interface SocialLink {
   platform: 'LinkedIn' | 'GitHub'
@@ -35,6 +36,7 @@ export interface Profile {
   bioLines: string[]
   contact: ContactInfo
   socials: SocialLink[]
+  cvUrl: string
   footerQuote: string
   footerSig: string
 }
@@ -95,7 +97,7 @@ export interface Project {
   responsibilities?: string[]
   outcomes?: string[]
   // Product showcase — placeholder names, edit freely in portfolio.ts
-  releases?: { name: string; platform?: string }[]
+  releases?: { name: string; platform?: string; image?: string }[]
 }
 
 export type StampTone = 'rust' | 'navy' | 'khaki'
@@ -187,6 +189,7 @@ export const portfolioData: PortfolioData = {
         short: 'gh'
       }
     ],
+    cvUrl: '/cv.pdf',
     footerQuote:
       '"Code is architecture. Experience is optimization. Product is the result."',
     footerSig: 'Lê Quang Thịnh · 2026'
@@ -322,9 +325,9 @@ export const portfolioData: PortfolioData = {
       ]
     },
     {
-      id: 'exp-2020-2022',
-      stampText: 'Achieved',
-      stampTone: 'navy',
+      id: 'exp-2020-present',
+      stampText: 'Present',
+      stampTone: 'rust',
       period: '2020 — Present',
       title: 'Front-End Developer',
       company: 'Youthdev Company · Web Platform & CMS',
@@ -411,12 +414,26 @@ export const portfolioData: PortfolioData = {
         'Millions of active users served across all TV platforms'
       ],
       releases: [
-        { name: 'SCTV TV', platform: 'SmartTV, Hotel' },
+        {
+          name: 'SCTV TV',
+          platform: 'SmartTV, Hotel',
+          image: '/images/appRelease/smart/sctvOnline.png'
+        },
         {
           name: 'Amasian',
-          platform: 'SmartTV, Hotel'
+          platform: 'SmartTV, Hotel',
+          image: '/images/appRelease/smart/amasian.svg'
         },
-        { name: 'OndemanKorea', platform: 'SmartTV' }
+        {
+          name: 'LG channel VN',
+          platform: 'Hotel',
+          image: '/images/appRelease/smart/lgChannelVN.png'
+        },
+        {
+          name: 'OndemanKorea',
+          platform: 'SmartTV',
+          image: '/images/appRelease/smart/odk.png'
+        }
       ]
     },
     {
@@ -455,9 +472,21 @@ export const portfolioData: PortfolioData = {
         'Enterprise-grade multi-tenant architecture supporting multiple brands from one codebase'
       ],
       releases: [
-        { name: 'OnDemandViet', platform: 'OTT Web' },
-        { name: 'SCTV Online', platform: 'OTT Web' },
-        { name: 'Illuon', platform: 'OTT Web' }
+        {
+          name: 'OnDemandViet',
+          platform: 'OTT Web',
+          image: '/images/appRelease/web/ondemanViet.png'
+        },
+        {
+          name: 'SCTV Online',
+          platform: 'OTT Web',
+          image: '/images/appRelease/web/sctv.png'
+        },
+        {
+          name: 'Illuon',
+          platform: 'OTT Web',
+          image: '/images/appRelease/web/illuon.png'
+        }
       ]
     },
     {

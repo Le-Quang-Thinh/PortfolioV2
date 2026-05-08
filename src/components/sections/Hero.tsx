@@ -2,11 +2,11 @@ import { portfolioData } from "@/data/portfolio";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { FeaturedProjectsCarousel } from "@/components/ui/FeaturedProjectsCarousel";
-import { StickyNote } from "@/components/ui/StickyNote";
+// import { StickyNote } from "@/components/ui/StickyNote";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
-  const { profile, kpis, stickyNote } = portfolioData;
+  const { profile, kpis } = portfolioData;
   const [first, middle, last] = profile.name.split(" ");
 
   return (
@@ -57,7 +57,7 @@ export function Hero() {
         </FadeIn>
 
         <FadeIn waitForIntro delay={0.15} className="hidden lg:block relative">
-          <StickyNote>{stickyNote}</StickyNote>
+          {/* <StickyNote>{stickyNote}</StickyNote> */}
           <FeaturedProjectsCarousel />
         </FadeIn>
       </div>

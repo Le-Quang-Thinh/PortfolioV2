@@ -69,6 +69,13 @@ export function Contact() {
               label="Location"
               value={profile.contact.location}
             />
+            <ContactItem
+              icon="cv"
+              label="Curriculum Vitae"
+              value="View / Download CV"
+              href={profile.cvUrl}
+              external
+            />
           </div>
         </FadeIn>
 

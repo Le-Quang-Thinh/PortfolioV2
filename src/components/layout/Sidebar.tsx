@@ -110,6 +110,16 @@ export function Sidebar() {
           ))}
         </div>
 
+        <a
+          href={profile.cvUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-[7px] w-full h-[32px] mb-3 border border-rust/30 rounded-sm no-underline font-heading text-[0.72rem] tracking-[0.1em] uppercase text-rust/70 transition-colors duration-200 hover:bg-rust/10 hover:text-rust hover:border-rust/50"
+        >
+          <SocialIcon name="cv" size={12} />
+          View CV
+        </a>
+
         <div className="font-mono text-[0.6rem] text-cream/20 text-center tracking-wider">
           © 2024 {profile.name}
         </div>

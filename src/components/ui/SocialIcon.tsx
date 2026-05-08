@@ -1,5 +1,5 @@
 import type { SocialIconKey } from "@/data/portfolio";
-import { Mail, Phone, Link2, GitBranch, MapPin } from 'lucide-react';
+import { Mail, Phone, Link2, GitBranch, MapPin, FileDown } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 
 const socialIconMap: Record<SocialIconKey, React.ComponentType<LucideProps>> = {
@@ -8,6 +8,7 @@ const socialIconMap: Record<SocialIconKey, React.ComponentType<LucideProps>> = {
   linkedin: Link2,
   github: GitBranch,
   location: MapPin,
+  cv: FileDown,
 };
 
 interface SocialIconProps {
