@@ -185,7 +185,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 {project.duration && (
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-[0.58rem] tracking-[0.1em] text-khaki uppercase">Duration</span>
-                    <span className="font-mono text-[0.68rem] text-ink bg-ink text-cream px-[8px] py-[2px] rounded-sm">
+                    <span className="font-mono text-[0.68rem] text-ink  text-cream px-[8px] py-[2px] rounded-sm">
                       {project.duration}
                     </span>
                   </div>

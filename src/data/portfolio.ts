@@ -159,13 +159,13 @@ export const portfolioData: PortfolioData = {
     name: 'Lê Quang Thịnh',
     shortName: 'Lê Quang Thịnh',
     monogram: 'LQT',
-    role: 'Senior Front-End Developer',
+    role: 'Software Engineer',
     titleLines: ['OTT & Smart TV Specialist', 'Streaming Platform Engineer'],
     summary:
-      '6+ years building high-performance OTT platforms and Smart TV applications across LG WebOS, Samsung Tizen, VIZIO and Chromecast. Passionate about crafting exceptional streaming experiences with clean code and scalable architecture.',
+      '6+ years building OTT streaming platforms across Web, Smart TV (LG WebOS, Samsung Tizen, VIZIO) and Chromecast. Co-architected 4 Smart TV apps from scratch — all published to TV stores. Built 4 multi-tenant web platforms and a CMS from scratch as initial sole developer. Cut bundle size by 80%+ (80MB → 12MB) and resolved critical memory issues on legacy devices (Chrome 38+).',
     bioLines: [
-      'I am a Senior Front-End Developer specializing in OTT and Smart TV platforms. I love crafting smooth, reliable and scalable streaming experiences that millions of users enjoy every day.',
-      'I have hands-on experience across the entire streaming stack on the front-end side — from video playback, DRM, analytics to payments and multi-tenant architectures.'
+      'I am a Software Engineer specializing in OTT and Smart TV platforms. I focus on building smooth, reliable and scalable streaming experiences — from video playback and DRM to payments and multi-tenant architecture.',
+      'I have worked across the full front-end streaming stack: adaptive video (HLS/DASH), Smart TV native SDKs (WebOS, Tizen, VIZIO), Chromecast, analytics pipelines, and subscription billing. I am comfortable operating as an independent contributor and as a collaborative team member.'
     ],
     contact: {
       email: 'lethinh02411@gmail.com',
@@ -176,7 +176,7 @@ export const portfolioData: PortfolioData = {
     socials: [
       {
         platform: 'LinkedIn',
-        label: 'linkedin.com/in/lequanthinh/',
+        label: 'linkedin.com/in/le-thinh-b20342196',
         url: 'https://www.linkedin.com/in/l%C3%AA-th%E1%BB%8Bnh-b20342196/',
         icon: 'linkedin',
         short: 'in'
@@ -209,8 +209,8 @@ export const portfolioData: PortfolioData = {
     { value: '6+', label: 'Years Experience' },
     { value: '4', label: 'TV Apps Published' },
     { value: '4', label: 'Web Platforms Built' },
-    { value: '80%', label: 'Bundle Reduction' },
-    { value: 'M+', label: 'Users Reached' }
+    { value: '80%+', label: 'Bundle Reduction' },
+    { value: '80→12MB', label: 'Bundle Size Cut' }
   ],
 
   stickyNote: '"Built for billions of streams."',
@@ -220,31 +220,31 @@ export const portfolioData: PortfolioData = {
       icon: 'Tv',
       name: 'Smart TV & OTT Expertise',
       description:
-        'Tizen, webOS, VIZIO, Chromecast, HLS/DASH, DRM — shipped to 4 TV stores'
+        'Tizen, WebOS, VIZIO, Chromecast, HLS/DASH, DRM — co-architected 4 apps shipped to TV stores'
     },
     {
       icon: 'Zap',
       name: 'Performance & Optimization',
       description:
-        '80%+ bundle reduction, memory leak hunting, rendering bottleneck profiling'
+        '80%+ bundle reduction (80MB → 12MB), memory leak resolution, legacy device support (Chrome 38+)'
     },
     {
       icon: 'Building2',
       name: 'Clean Architecture & Scalability',
       description:
-        'Multi-tenant platforms, React ecosystems, CI/CD, Docker, RBAC'
+        'Multi-tenant platforms, React ecosystem, CI/CD, Docker, RBAC — built from scratch as initial sole developer'
     },
     {
       icon: 'Wrench',
       name: 'Problem Solving & Ownership',
       description:
-        'Root-cause analysis, cross-team debugging, end-to-end delivery'
+        'Root-cause analysis, cross-team debugging, end-to-end delivery on constrained hardware'
     },
     {
       icon: 'Target',
       name: 'Product Mindset',
       description:
-        'User-centric thinking, metrics-driven decisions, on-time shipping'
+        'User-centric thinking, metrics-driven decisions, onboarding and mentoring junior developers'
     }
   ],
 
@@ -252,9 +252,9 @@ export const portfolioData: PortfolioData = {
     title: 'Delivering Seamless Streaming\nAcross All Platforms',
     nodes: [
       {
-        icon: 'Tv',
-        name: 'Smart TV',
-        sub: 'WebOS / Tizen / VIZIO',
+        icon: 'Radio',
+        name: 'Streaming',
+        sub: 'HLS / DASH / DRM',
         position: 'top'
       },
       { icon: 'Laptop', name: 'Web', sub: 'React / Next.js', position: 'left' },
@@ -270,16 +270,17 @@ export const portfolioData: PortfolioData = {
         sub: 'Google Cast SDK',
         position: 'bottomLeft'
       },
+
       {
-        icon: 'Radio',
-        name: 'Streaming',
-        sub: 'HLS / DASH / DRM',
+        icon: 'Tv',
+        name: 'Smart TV',
+        sub: 'WebOS / Tizen / VIZIO',
         position: 'bottom'
       },
       {
         icon: 'BarChart3',
         name: 'Analytics',
-        sub: 'Mux / Firebase / GA4',
+        sub: 'Mux / Firebase / KCPA',
         position: 'bottomRight'
       }
     ]
@@ -290,24 +291,24 @@ export const portfolioData: PortfolioData = {
       id: 'exp-2022-present',
       stampText: 'Present',
       stampTone: 'rust',
-      period: '2022 — Present',
-      title: 'Senior Front-End Developer',
+      period: 'Apr 2022 — Present',
+      title: 'Software Engineer',
       company: 'Youthdev Company · Smart TV & OTT Division',
       highlights: [
         {
           label: 'Smart TV',
           items: [
-            'Co-architected 4 Smart TV apps from scratch, published on TV stores (.ipk/.wgt)',
-            'Integrated DRM (Widevine/FairPlay), HLS/DASH, Chromecast Cast SDK',
+            'Co-architected 4 Smart TV apps from scratch with one other developer — published to LG, Samsung, and VIZIO TV stores (.ipk/.wgt)',
+            'Integrated DRM (Widevine/FairPlay), HLS/DASH adaptive streaming, and Google Cast SDK for Chromecast',
             'Designed 10-foot UI with smooth remote/keyboard navigation across all platforms'
           ]
         },
         {
           label: 'Performance',
           items: [
-            'Cut bundle size 80%+ (80MB → ~12MB)',
-            'Solved critical memory leaks & rendering bottlenecks',
-            'Integrated analytics: KCPA, Firebase, Mux, Google Analytics'
+            'Cut bundle size 80%+ (80MB → ~12MB) via code splitting, tree shaking, and dead code elimination',
+            'Resolved critical memory leaks and rendering bottlenecks on legacy Smart TVs (Chrome 38+) using ES5 transpilation and polyfills',
+            'Integrated video analytics: KCPA, Firebase, Mux, Google Analytics'
           ]
         }
       ],
@@ -326,31 +327,32 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'exp-2020-present',
-      stampText: 'Present',
-      stampTone: 'rust',
-      period: '2020 — Present',
+      stampText: 'Growth',
+      stampTone: 'navy',
+      period: 'Feb 2020 — Apr 2022',
       title: 'Front-End Developer',
       company: 'Youthdev Company · Web Platform & CMS',
       highlights: [
         {
           label: 'Web & CMS',
           items: [
-            'Built CMS dashboard (React-Admin, MUI) with multi-tenant & RBAC',
-            'Developed 4 OTT web platforms with SSR (Express/Node.js) for SEO',
-            'Set up GitLab CI/CD, Docker workflows; mentored 1 junior developer'
+            'Built all web products from scratch as initial sole developer; onboarded a new team member after 3 months and continued as primary contributor',
+            'Developed 4 multi-tenant OTT web platforms (OnDemandViet, SCTV Online, Muchomas, Illuon) with shared codebase and SSR (Express/Node.js) for SEO',
+            'Built CMS dashboard (React-Admin, TypeScript, MUI) with multi-tenant RBAC, S3 multipart video upload, and live schedule management'
           ]
         },
         {
-          label: 'Integrations',
+          label: 'Integrations & Quality',
           items: [
-            'Stripe, PayPal, MoMo — subscription & recurring billing',
-            'DRM, OneSignal, Firebase, Mux, GA, DFP Ads integration',
-            'Built Cypress E2E test suite for critical flows'
+            'Integrated 3 payment gateways (Stripe, PayPal, MoMo) with subscription billing and upgrade/downgrade flows',
+            'Configured DRM, OneSignal push notifications, Firebase, Mux, Google Analytics, and Google DFP ad serving',
+            'Built Cypress E2E test suite; set up GitLab CI/CD + Docker pipelines; mentored 1 junior developer'
           ]
         }
       ],
       tags: [
         'React-Admin',
+        'TypeScript',
         'MUI',
         'Node.js',
         'Express',
@@ -359,22 +361,23 @@ export const portfolioData: PortfolioData = {
         'PayPal',
         'MoMo',
         'Cypress',
-        'Docker'
+        'Docker',
+        'AWS S3'
       ]
     },
     {
       id: 'exp-2019-2020',
       stampText: 'Good Start',
       stampTone: 'khaki',
-      period: '2019 — 2020',
+      period: 'Jun 2019 — Feb 2020',
       title: 'Trainee / Junior Full-Stack',
       company: 'Youthdev Company · Internal E-Learning Platform',
       bullets: [
-        'Developed Pi Project (e-learning) with courses, flashcards and audio playback',
-        'Built RESTful APIs with Laravel, handled front-end UI and integrations',
-        'Continued supporting system and adding urgent features'
+        'Built Pi Project — an internal e-learning platform with slide-based courses, flashcard systems, and audio course playback',
+        'Handled both back-end (Laravel API, database design) and front-end (HTML, CSS, JavaScript UI), building a full-stack foundation',
+        'Continued supporting the system and contributing urgent features during subsequent roles'
       ],
-      tags: ['Laravel', 'PHP', 'JavaScript', 'MySQL', 'REST API']
+      tags: ['Laravel', 'PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS']
     }
   ],
 
@@ -388,49 +391,57 @@ export const portfolioData: PortfolioData = {
       title: 'Smart TV Apps',
       subtitle: 'Netflix-style streaming applications',
       description:
-        'Co-architected and built 4 TV applications from scratch, published on all major TV stores. Full DRM, HLS/DASH, analytics, and 10-foot remote-friendly UI.',
+        'Co-architected 4 TV applications from scratch with one other developer, published on all major TV stores. Full DRM, HLS/DASH adaptive streaming, analytics, and 10-foot remote-friendly UI.',
       metrics: [
         { icon: 'Package', text: '80%+ bundle reduction' },
-        { icon: 'Smartphone', text: '4 platforms' },
+        { icon: 'Smartphone', text: '4 platforms published' },
         { icon: 'Lock', text: 'DRM protected' }
       ],
-      stack: ['React', 'TypeScript', 'HLS/DASH', 'Widevine', 'Firebase', 'Mux'],
+      stack: [
+        'React',
+        'TypeScript',
+        'HLS/DASH',
+        'Widevine',
+        'Firebase',
+        'Mux',
+        'KCPA'
+      ],
       classification: 'CONFIDENTIAL',
-      role: 'Senior Front-End Engineer & Architect',
-      duration: '2022 — Present',
+      role: 'Software Engineer (Co-Architect)',
+      duration: 'Apr 2022 — Present',
       responsibilities: [
-        'Co-architected 4 Smart TV applications from scratch and published to LG Content Store, Samsung TV App Store, and VIZIO SmartCast',
+        'Co-architected 4 Smart TV applications from scratch with one other developer — published to LG Content Store, Samsung TV App Store, and VIZIO SmartCast',
         'Built cross-platform OTT video player with HLS/DASH adaptive streaming and DRM protection (Widevine + FairPlay)',
         'Designed 10-foot UI navigation system with full remote-control and keyboard support across all TV platforms',
-        'Engineered lazy-loading and module-splitting architecture reducing bundle size from 80MB to under 12MB (80%+ reduction)',
-        'Integrated analytics pipelines: Mux, Firebase Analytics, Google Analytics 4, and KCPA event tracking',
-        'Led performance profiling to eliminate memory leaks and rendering bottlenecks on constrained TV hardware',
-        'Collaborated with backend, QA, and product teams to deliver and certify all production store releases'
+        'Reduced bundle size from 80MB to under 12MB (80%+ reduction) through aggressive code splitting, tree shaking, and lazy loading',
+        'Resolved critical memory leaks and rendering bottlenecks on hardware-constrained legacy TVs (Chrome 38+) using ES5 transpilation and polyfills',
+        'Integrated analytics pipelines: Mux, Firebase Analytics, Google Analytics, and KCPA event tracking',
+        'Built Chromecast receiver applications using Google Cast SDK with KCPA integration for stable cross-device casting'
       ],
       outcomes: [
         'Published to 4 major TV ecosystems: LG WebOS, Samsung Tizen, VIZIO SmartCast, and Chromecast',
-        '80%+ bundle reduction — from 80MB down to under 12MB',
-        'End-to-end DRM coverage via Widevine and FairPlay across all sessions',
-        'Millions of active users served across all TV platforms'
+        '80%+ bundle size reduction — from 80MB down to under 12MB',
+        'Full DRM coverage via Widevine and FairPlay across all streaming sessions',
+        'Legacy device support down to Chrome 38 — stable playback on older hardware'
       ],
       releases: [
         {
-          name: 'SCTV TV',
-          platform: 'SmartTV, Hotel',
+          name: 'SCTV Online TV',
+          platform: 'SmartTV',
           image: '/images/appRelease/smart/sctvOnline.png'
         },
         {
           name: 'Amasian',
-          platform: 'SmartTV, Hotel',
+          platform: 'SmartTV',
           image: '/images/appRelease/smart/amasian.svg'
         },
         {
-          name: 'LG channel VN',
-          platform: 'Hotel',
+          name: 'LG Channel VN',
+          platform: 'Hotel TV',
           image: '/images/appRelease/smart/lgChannelVN.png'
         },
         {
-          name: 'OndemanKorea',
+          name: 'OnDemandKorea',
           platform: 'SmartTV',
           image: '/images/appRelease/smart/odk.png'
         }
@@ -445,31 +456,39 @@ export const portfolioData: PortfolioData = {
       title: 'OTT Web Platforms',
       subtitle: 'Multi-tenant streaming web apps',
       description:
-        'Sole front-end developer. Built multi-tenant SSR platforms with subscription payments, DRM, push notifications, and ad integration for millions of users.',
+        'Built as initial sole front-end developer. 4 multi-tenant SSR platforms with subscription payments, DRM, push notifications, and ad integration — sharing one codebase across all brands.',
       metrics: [
-        { icon: 'Rocket', text: 'SSR/SEO optimized' },
+        { icon: 'Rocket', text: 'SSR / SEO optimized' },
         { icon: 'CreditCard', text: '3 payment gateways' },
-        { icon: 'Users', text: 'M+ users' }
+        { icon: 'Users', text: '4 brands, 1 codebase' }
       ],
-      stack: ['Next.js', 'Node.js', 'Stripe', 'PayPal', 'OneSignal', 'DFP Ads'],
+      stack: [
+        'Next.js',
+        'Node.js',
+        'Stripe',
+        'PayPal',
+        'MoMo',
+        'OneSignal',
+        'DFP Ads'
+      ],
       classification: 'CONFIDENTIAL',
-      role: 'Lead Front-End Developer',
-      duration: '2020 — Present',
+      role: 'Lead Front-End Developer (Initial Sole Developer)',
+      duration: 'Feb 2020 — Apr 2022',
       responsibilities: [
-        'Served as sole front-end developer across 4 multi-tenant OTT web platforms (OnDemandViet, SCTV Online, Illuon)',
-        'Implemented SSR with Node.js/Express for SEO performance — improved organic discoverability across all platform domains',
-        'Built subscription and recurring billing workflows integrating Stripe, PayPal, and MoMo payment gateways',
-        'Integrated DRM-protected video playback with HLS/DASH adaptive bitrate streaming',
-        'Delivered OneSignal push notification system and DFP ad integration across all tenants',
-        'Architected multi-tenant configuration system enabling rapid platform whitelabeling and isolated data',
-        'Set up GitLab CI/CD pipelines and Docker workflows for consistent, reliable deployments',
-        'Mentored one junior front-end developer on platform architecture and delivery practices'
+        'Built all web products from scratch as the initial sole front-end developer; onboarded a new team member after 3 months and continued as primary contributor',
+        'Developed 4 multi-tenant OTT web platforms (OnDemandViet, SCTV Online, Muchomas, Illuon) with shared codebase architecture',
+        'Implemented SSR with Node.js/Express for SEO optimization — improved Google PageSpeed and Lighthouse scores across all platform domains',
+        'Integrated 3 payment gateways (Stripe, PayPal, MoMo) with subscription billing, upgrade/downgrade flows, and recurring billing management',
+        'Configured DRM-protected video playback with HLS/DASH adaptive streaming',
+        'Integrated OneSignal push notifications, Firebase analytics, Mux video analytics, Google DFP ad serving',
+        'Set up GitLab CI/CD pipelines and Docker workflows for consistent deployments',
+        'Mentored 1 junior developer through code reviews, establishing React best practices'
       ],
       outcomes: [
+        '4 multi-tenant OTT platforms sharing one codebase — OnDemandViet, SCTV Online, Muchomas, Illuon',
         '3 production payment gateways integrated: Stripe, PayPal, and MoMo',
-        'Millions of active users served across all web streaming platforms',
-        'SSR-optimized for search engine indexing across all platform domains',
-        'Enterprise-grade multi-tenant architecture supporting multiple brands from one codebase'
+        'SSR-optimized across all platform domains for search engine indexing',
+        'Enterprise-grade multi-tenant architecture supporting multiple brands with isolated data and configs'
       ],
       releases: [
         {
@@ -498,34 +517,43 @@ export const portfolioData: PortfolioData = {
       title: 'Internal CMS',
       subtitle: 'Content management platform',
       description:
-        'Multi-tenant CMS with RBAC, S3 multipart upload, live schedule, content & subscription management with modular architecture.',
+        'Multi-tenant CMS built from scratch as sole developer. Features RBAC, S3 multipart upload, live schedule management, content & subscription management with modular reusable architecture.',
       metrics: [
         { icon: 'ShieldCheck', text: 'Multi-tenant RBAC' },
-        { icon: 'Cloud', text: 'AWS S3 uploads' },
+        { icon: 'Cloud', text: 'AWS S3 multipart upload' },
         { icon: 'Calendar', text: 'Live scheduling' }
       ],
-      stack: ['React-Admin', 'MUI', 'AWS S3', 'REST API', 'Cypress'],
+      stack: [
+        'React-Admin',
+        'TypeScript',
+        'MUI',
+        'Styled Components',
+        'AWS S3',
+        'REST API',
+        'Cypress'
+      ],
       classification: 'INTERNAL',
-      role: 'Full-Stack Front-End Engineer',
-      duration: '2020 — 2022',
+      role: 'Sole Front-End Developer',
+      duration: 'Feb 2020 — Apr 2022',
       responsibilities: [
-        'Designed and built multi-tenant CMS dashboard from scratch using React-Admin and Material UI',
+        'Designed and built multi-tenant CMS dashboard from scratch as sole front-end developer using React-Admin, TypeScript, and Material UI',
         'Implemented Role-Based Access Control (RBAC) with granular permission management per tenant and user role',
-        'Built S3 multipart file upload system with real-time progress tracking for large media assets',
+        'Built S3 multipart file upload system with real-time progress tracking for large video and media assets',
         'Developed live content scheduling system for managing broadcast and on-demand content calendars',
         'Created subscription and plan management workflows supporting end-to-end content monetization',
-        'Built modular content interfaces: videos, articles, series, episodes, categories, and tags',
+        'Built modular reusable CRUD components for content: videos, series, episodes, categories, and tags',
+        'Customized Material UI with Styled Components to match per-tenant branding requirements',
         'Wrote Cypress E2E test suite covering all critical admin flows and content management operations'
       ],
       outcomes: [
         'Multi-tenant RBAC serving multiple content teams with fully isolated access and data',
-        'AWS S3 multipart upload system supporting large video and media file ingestion',
+        'S3 multipart upload system supporting large video file ingestion with real-time progress',
         'Live scheduling engine enabling real-time broadcast and on-demand content management',
-        'Cypress E2E test coverage across all critical admin and content management workflows'
+        'Reusable CRUD module architecture — feature development speed increased significantly after rollout'
       ],
       releases: [
         { name: 'OTT Admin Console', platform: 'CMS' },
-        { name: 'Live Schedule', platform: 'CMS' }
+        { name: 'Live Schedule Manager', platform: 'CMS' }
       ]
     },
     {
@@ -535,33 +563,42 @@ export const portfolioData: PortfolioData = {
       thumbIcon: 'Cast',
       platforms: ['Google Cast SDK', 'KCPA Analytics'],
       title: 'Chromecast Apps',
-      subtitle: 'Receiver apps with cast SDK',
+      subtitle: 'Receiver apps with Cast SDK',
       description:
-        'Receiver apps with KCPA tracking, seamless casting & synchronized playback analytics across all streaming sessions.',
+        'Receiver apps built on Google Cast SDK with KCPA tracking, seamless casting and synchronized playback analytics across all streaming sessions.',
       metrics: [
         { icon: 'BarChart3', text: 'KCPA tracking' },
         { icon: 'RefreshCw', text: 'Sync playback' },
-        { icon: 'Target', text: 'Cast SDK' }
+        { icon: 'Target', text: 'Google Cast SDK' }
       ],
-      stack: ['Google Cast', 'JavaScript', 'HLS', 'KCPA', 'Firebase'],
+      stack: [
+        'Google Cast',
+        'JavaScript',
+        'TypeScript',
+        'HLS',
+        'KCPA',
+        'Firebase'
+      ],
       classification: 'CONFIDENTIAL',
-      role: 'Smart TV Engineer',
-      duration: '2022 — Present',
+      role: 'Smart TV & Chromecast Engineer',
+      duration: 'Apr 2022 — Present',
       responsibilities: [
-        'Developed Chromecast receiver applications with full Google Cast SDK integration on top of existing OTT platforms',
-        'Implemented KCPA analytics event tracking across all casting and playback session lifecycles',
+        'Built Chromecast receiver applications on top of Google Cast SDK with KCPA analytics integration',
+        'Implemented KCPA event tracking across all casting and playback session lifecycles',
         'Built seamless playback state synchronization between sender (mobile/web) and receiver (TV) devices',
         'Integrated HLS adaptive streaming and DRM-protected content playback on the receiver side',
         'Handled cast session management, state transitions, resume playback, and error recovery flows',
-        'Tested across multiple Chromecast hardware generations and Android TV smart display devices'
+        'Tested across multiple Chromecast hardware generations'
       ],
       outcomes: [
-        'Google Cast SDK integration shipped across web and mobile sender applications',
+        'Google Cast SDK integration shipped across web sender applications',
         'KCPA analytics instrumented across all active cast sessions end-to-end',
-        'Synchronized playback state across mobile, web, and TV receiver with zero drift',
-        'Production-deployed supporting millions of Chromecast streaming sessions'
+        'Synchronized playback state between sender and TV receiver with stable cross-device casting'
       ],
-      releases: [{ name: 'OnDemandKorea Cast', platform: 'Chromecast' }]
+      releases: [
+        { name: 'OnDemandKorea Cast', platform: 'Chromecast' },
+        { name: 'SCTV Online Cast', platform: 'Chromecast' }
+      ]
     }
   ],
 
@@ -586,6 +623,7 @@ export const portfolioData: PortfolioData = {
         { name: 'React.js', featured: true },
         { name: 'Next.js', featured: true },
         { name: 'Redux' },
+        { name: 'Context API' },
         { name: 'XState' },
         { name: 'Node.js' },
         { name: 'Express.js' },
@@ -599,14 +637,14 @@ export const portfolioData: PortfolioData = {
       icon: 'Cast',
       items: [
         { name: 'HLS / DASH', featured: true },
-        { name: 'Widevine DRM', featured: true },
-        { name: 'FairPlay DRM', featured: true },
-        { name: 'LG WebOS' },
-        { name: 'Samsung Tizen' },
+        { name: 'DRM (Widevine / FairPlay)', featured: true },
+        { name: 'LG WebOS', featured: true },
+        { name: 'Samsung Tizen', featured: true },
         { name: 'VIZIO SmartCast' },
         { name: 'Google Cast SDK' },
         { name: '10-foot UI' },
-        { name: 'Mux' }
+        { name: 'Mux' },
+        { name: 'KCPA' }
       ]
     },
     {
@@ -621,14 +659,19 @@ export const portfolioData: PortfolioData = {
         { name: 'Babel' },
         { name: 'AWS S3' },
         { name: 'CloudFront' },
-        { name: 'Vercel' }
+        { name: 'Vercel' },
+        { name: 'Claude AI', featured: true }
       ]
     },
     {
       id: 'testing',
       title: 'Testing & Quality',
       icon: 'FlaskConical',
-      items: [{ name: 'Cypress E2E' }, { name: 'Lighthouse' }, { name: 'Jest' }]
+      items: [
+        { name: 'Cypress E2E', featured: true },
+        { name: 'Chrome Lighthouse' },
+        { name: 'Jest' }
+      ]
     },
     {
       id: 'integrations',
@@ -653,12 +696,12 @@ export const portfolioData: PortfolioData = {
       icon: 'GraduationCap',
       degree: 'Information Technology',
       school: 'Tây Nguyên University – TNU',
-      years: "Bachelor's Degree · 2015 – 2019"
+      years: "Bachelor's Degree · 2014 – 2019"
     }
   ],
 
   contactSubtitle:
-    'Open to senior front-end, OTT engineering, or Smart TV specialist roles. Always interested in challenging streaming platform projects.'
+    'Open to Software Engineer or Frontend Architect roles — OTT, streaming platforms, or Smart TV specialist. On-site, hybrid, or remote in Ho Chi Minh City.'
 }
 
 export type MemoryAccent = 'cyan' | 'magenta' | 'amber' | 'lime' | 'violet'

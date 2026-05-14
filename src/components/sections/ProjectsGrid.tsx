@@ -20,7 +20,7 @@ export function ProjectsGrid({ projects }: ProjectsGridProps) {
           <FadeIn key={p.id} delay={i * 0.05}>
             <button
               type="button"
-              className="w-full text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 focus-visible:ring-offset-cream-dark rounded-md"
+              className="w-full h-full text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 focus-visible:ring-offset-cream-dark rounded-md"
               onClick={() => setSelected(p)}
               aria-haspopup="dialog"
               aria-label={`View case study: ${p.title}`}

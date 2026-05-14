@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="bg-cream border border-ink-soft/12 rounded-md overflow-hidden shadow-card transition-transform transition-shadow duration-200 hover:-translate-y-[3px] hover:shadow-lift">
+    <article className="h-full bg-cream border border-ink-soft/12 rounded-md overflow-hidden shadow-card transition duration-200 hover:-translate-y-0.75 hover:shadow-lift flex flex-col">
       <div
         className={`relative h-[155px] flex items-center justify-center overflow-hidden ${thumbGradient[project.thumbType]}`}
       >
@@ -39,7 +39,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
 
-      <div className="px-[18px] pt-4 pb-[18px]">
+      <div className="flex-1 px-[18px] pt-4 pb-[18px]">
         <h3 className="font-display text-[1.45rem] tracking-[0.04em] text-ink mb-[3px]">
           {project.title}
         </h3>

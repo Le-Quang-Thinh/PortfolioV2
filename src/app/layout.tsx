@@ -39,12 +39,12 @@ const ibmPlex = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lê Quang Thịnh — Senior Front-End Developer",
+  title: "Lê Quang Thịnh — Software Engineer",
   description:
-    "Senior Front-End Developer specializing in OTT and Smart TV platforms. 6+ years building high-performance streaming experiences across LG WebOS, Samsung Tizen, VIZIO and Chromecast.",
+    "Software Engineer specializing in OTT and Smart TV platforms. 6+ years building high-performance streaming experiences across LG WebOS, Samsung Tizen, VIZIO and Chromecast.",
   keywords: [
     "Lê Quang Thịnh",
-    "Senior Front-End Developer",
+    "Software Engineer",
     "OTT Developer",
     "Smart TV Engineer",
     "Streaming Platform",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Lê Quang Thịnh" }],
   openGraph: {
-    title: "Lê Quang Thịnh — Senior Front-End Developer",
+    title: "Lê Quang Thịnh — Software Engineer",
     description:
       "OTT & Smart TV Specialist · Streaming Platform Engineer. Crafting smooth, reliable streaming experiences for millions.",
     type: "website",
