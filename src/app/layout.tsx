@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Oswald, Playfair_Display, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -39,12 +40,12 @@ const ibmPlex = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lê Quang Thịnh — Software Engineer",
+  title: "Lê Quang Thịnh — Front End Developer",
   description:
-    "Software Engineer specializing in OTT and Smart TV platforms. 6+ years building high-performance streaming experiences across LG WebOS, Samsung Tizen, VIZIO and Chromecast.",
+    "Front End Developer specializing in OTT and Smart TV platforms. 6+ years building high-performance streaming experiences across LG WebOS, Samsung Tizen, VIZIO and Chromecast.",
   keywords: [
     "Lê Quang Thịnh",
-    "Software Engineer",
+    "Front End Developer",
     "OTT Developer",
     "Smart TV Engineer",
     "Streaming Platform",
@@ -54,14 +55,14 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
   ],
-    icons: {
+  icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   authors: [{ name: "Lê Quang Thịnh" }],
   openGraph: {
-    title: "Lê Quang Thịnh — Software Engineer",
+    title: "Lê Quang Thịnh — Front End Developer",
     description:
       "OTT & Smart TV Specialist · Streaming Platform Engineer. Crafting smooth, reliable streaming experiences for millions.",
     type: "website",
@@ -79,7 +80,10 @@ export default function RootLayout({
       lang="vi"
       className={`${bebas.variable} ${oswald.variable} ${playfair.variable} ${inter.variable} ${ibmPlex.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }

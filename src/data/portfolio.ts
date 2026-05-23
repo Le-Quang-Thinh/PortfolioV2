@@ -159,17 +159,17 @@ export const portfolioData: PortfolioData = {
     name: 'Lê Quang Thịnh',
     shortName: 'Lê Quang Thịnh',
     monogram: 'LQT',
-    role: 'Software Engineer',
+    role: 'Senior Frontend Developer',
     titleLines: ['OTT & Smart TV Specialist', 'Streaming Platform Engineer'],
     summary:
-      '6+ years building OTT streaming platforms across Web, Smart TV (LG WebOS, Samsung Tizen, VIZIO) and Chromecast. Co-architected 4 Smart TV apps from scratch — all published to TV stores. Built 4 multi-tenant web platforms and a CMS from scratch as initial sole developer. Cut bundle size by 80%+ (80MB → 12MB) and resolved critical memory issues on legacy devices (Chrome 38+).',
+      '6+ years building OTT streaming platforms across Web, Smart TV (LG WebOS, Samsung Tizen, VIZIO) and Chromecast. Co-architected 4 Smart TV apps from scratch — all published to TV stores. Built 4 multi-tenant web platforms and a CMS from scratch as initial sole developer. Cut bundle size by 80%+ (80MB → 12MB) and resolved critical memory/performance issues on legacy devices (Chrome 38+). Comfortable operating as both an independent contributor and a collaborative team member in fast-paced, product-driven environments.',
     bioLines: [
-      'I am a Software Engineer specializing in OTT and Smart TV platforms. I focus on building smooth, reliable and scalable streaming experiences — from video playback and DRM to payments and multi-tenant architecture.',
-      'I have worked across the full front-end streaming stack: adaptive video (HLS/DASH), Smart TV native SDKs (WebOS, Tizen, VIZIO), Chromecast, analytics pipelines, and subscription billing. I am comfortable operating as an independent contributor and as a collaborative team member.'
+      'I am a Senior Frontend Developer specializing in OTT and Smart TV platforms. I focus on building smooth, reliable and scalable streaming experiences — from video playback and DRM to payments and multi-tenant architecture.',
+      'I have worked across the full front-end streaming stack: adaptive video (HLS/DASH), Smart TV native SDKs (WebOS, Tizen, VIZIO), Chromecast, analytics pipelines, and subscription billing. I am comfortable operating as both an independent contributor and a collaborative team member in fast-paced, product-driven environments.'
     ],
     contact: {
       email: 'lethinh02411@gmail.com',
-      phone: '0915 955 629',
+      phone: '+84 915 955 629',
       phoneHref: '+84915955629',
       location: 'Ho Chi Minh City, Vietnam'
     },
@@ -183,13 +183,13 @@ export const portfolioData: PortfolioData = {
       },
       {
         platform: 'GitHub',
-        label: 'github.com/Le-Quang-Thinh/portfolio',
-        url: 'https://github.com/Le-Quang-Thinh/portfolio',
+        label: 'github.com/Le-Quang-Thinh',
+        url: 'https://github.com/Le-Quang-Thinh',
         icon: 'github',
         short: 'gh'
       }
     ],
-    cvUrl: '/cv.pdf',
+    cvUrl: '/Le_Quang_Thinh_Senior_Frontend_Developer_CV.pdf',
     footerQuote:
       '"Code is architecture. Experience is optimization. Product is the result."',
     footerSig: 'Lê Quang Thịnh · 2026'
@@ -292,13 +292,14 @@ export const portfolioData: PortfolioData = {
       stampText: 'Present',
       stampTone: 'rust',
       period: 'Apr 2022 — Present',
-      title: 'Software Engineer',
+      title: 'Senior Frontend Developer',
       company: 'Youthdev Company · Smart TV & OTT Division',
       highlights: [
         {
           label: 'Smart TV',
           items: [
             'Co-architected 4 Smart TV apps from scratch with one other developer — published to LG, Samsung, and VIZIO TV stores (.ipk/.wgt)',
+            'Extended 2 apps (Amasian, LG Channel VN) to hotel TV environments via LG ProCentric system, covering both consumer and hospitality deployment models',
             'Integrated DRM (Widevine/FairPlay), HLS/DASH adaptive streaming, and Google Cast SDK for Chromecast',
             'Designed 10-foot UI with smooth remote/keyboard navigation across all platforms'
           ]
@@ -329,7 +330,7 @@ export const portfolioData: PortfolioData = {
       id: 'exp-2020-present',
       stampText: 'Growth',
       stampTone: 'navy',
-      period: 'Feb 2020 — Apr 2022',
+      period: 'Feb 2020 — Apr 2022 (+ on-demand support)',
       title: 'Front-End Developer',
       company: 'Youthdev Company · Web Platform & CMS',
       highlights: [
@@ -338,7 +339,7 @@ export const portfolioData: PortfolioData = {
           items: [
             'Built all web products from scratch as initial sole developer; onboarded a new team member after 3 months and continued as primary contributor',
             'Developed 4 multi-tenant OTT web platforms (OnDemandViet, SCTV Online, Muchomas, Illuon) with shared codebase and SSR (Express/Node.js) for SEO',
-            'Built CMS dashboard (React-Admin, TypeScript, MUI) with multi-tenant RBAC, S3 multipart video upload, and live schedule management'
+            'Built CMS dashboard (React-Admin, TypeScript, Styled Components, MUI) with multi-tenant RBAC, S3 multipart video upload, and live schedule management'
           ]
         },
         {
@@ -407,10 +408,11 @@ export const portfolioData: PortfolioData = {
         'KCPA'
       ],
       classification: 'CONFIDENTIAL',
-      role: 'Software Engineer (Co-Architect)',
+      role: 'Senior Frontend Developer (Co-Architect)',
       duration: 'Apr 2022 — Present',
       responsibilities: [
         'Co-architected 4 Smart TV applications from scratch with one other developer — published to LG Content Store, Samsung TV App Store, and VIZIO SmartCast',
+        'Extended 2 apps (Amasian, LG Channel VN) to hotel TV environments via LG ProCentric system, covering both consumer and hospitality deployment models',
         'Built cross-platform OTT video player with HLS/DASH adaptive streaming and DRM protection (Widevine + FairPlay)',
         'Designed 10-foot UI navigation system with full remote-control and keyboard support across all TV platforms',
         'Reduced bundle size from 80MB to under 12MB (80%+ reduction) through aggressive code splitting, tree shaking, and lazy loading',
@@ -452,7 +454,7 @@ export const portfolioData: PortfolioData = {
       thumbType: 'web',
       thumbLabel: 'OTT WEB',
       thumbIcon: 'Globe',
-      platforms: ['OnDemandViet', 'SCTV Online', 'Illuon'],
+      platforms: ['OnDemandViet', 'SCTV Online', 'Illuon', 'Muchomas'],
       title: 'OTT Web Platforms',
       subtitle: 'Multi-tenant streaming web apps',
       description:
@@ -472,7 +474,7 @@ export const portfolioData: PortfolioData = {
         'DFP Ads'
       ],
       classification: 'CONFIDENTIAL',
-      role: 'Lead Front-End Developer (Initial Sole Developer)',
+      role: 'Key Front-End Developer (Initial Sole Developer)',
       duration: 'Feb 2020 — Apr 2022',
       responsibilities: [
         'Built all web products from scratch as the initial sole front-end developer; onboarded a new team member after 3 months and continued as primary contributor',
@@ -482,6 +484,7 @@ export const portfolioData: PortfolioData = {
         'Configured DRM-protected video playback with HLS/DASH adaptive streaming',
         'Integrated OneSignal push notifications, Firebase analytics, Mux video analytics, Google DFP ad serving',
         'Set up GitLab CI/CD pipelines and Docker workflows for consistent deployments',
+        'Wrote Cypress E2E test suite covering all critical admin flows and content management operations',
         'Mentored 1 junior developer through code reviews, establishing React best practices'
       ],
       outcomes: [
@@ -505,6 +508,11 @@ export const portfolioData: PortfolioData = {
           name: 'Illuon',
           platform: 'OTT Web',
           image: '/images/appRelease/web/illuon.png'
+        },
+        {
+          name: 'Muchomas',
+          platform: 'OTT Web, Closed'
+          // image: '/images/appRelease/web/illuon.png'
         }
       ]
     },
@@ -543,7 +551,7 @@ export const portfolioData: PortfolioData = {
         'Created subscription and plan management workflows supporting end-to-end content monetization',
         'Built modular reusable CRUD components for content: videos, series, episodes, categories, and tags',
         'Customized Material UI with Styled Components to match per-tenant branding requirements',
-        'Wrote Cypress E2E test suite covering all critical admin flows and content management operations'
+        'Established React best practices and clean code standards for the team through regular code reviews, pair programming, and onboarding documentation'
       ],
       outcomes: [
         'Multi-tenant RBAC serving multiple content teams with fully isolated access and data',
@@ -595,10 +603,7 @@ export const portfolioData: PortfolioData = {
         'KCPA analytics instrumented across all active cast sessions end-to-end',
         'Synchronized playback state between sender and TV receiver with stable cross-device casting'
       ],
-      releases: [
-        { name: 'OnDemandKorea Cast', platform: 'Chromecast' },
-        { name: 'SCTV Online Cast', platform: 'Chromecast' }
-      ]
+      releases: [{ name: 'OnDemandKorea Cast', platform: 'Chromecast' }]
     }
   ],
 
@@ -628,7 +633,10 @@ export const portfolioData: PortfolioData = {
         { name: 'Node.js' },
         { name: 'Express.js' },
         { name: 'Laravel' },
-        { name: 'React-Admin' }
+        { name: 'React-Admin' },
+        { name: 'Material UI (MUI)' },
+        { name: 'Styled Components' },
+        { name: 'Tailwind CSS' }
       ]
     },
     {
@@ -680,7 +688,7 @@ export const portfolioData: PortfolioData = {
       items: [
         { name: 'Firebase' },
         { name: 'OneSignal' },
-        { name: 'Google Analytics' },
+        { name: 'Google Analytics / GTM' },
         { name: 'DFP Ads' },
         { name: 'Stripe' },
         { name: 'PayPal' },
@@ -700,8 +708,9 @@ export const portfolioData: PortfolioData = {
     }
   ],
 
-  contactSubtitle:
-    'Open to Software Engineer or Frontend Architect roles — OTT, streaming platforms, or Smart TV specialist. On-site, hybrid, or remote in Ho Chi Minh City.'
+  contactSubtitle: `Senior Frontend Developer with OTT & Smart TV expertise, 
+open to web application and product engineering roles. 
+On-site, hybrid, or remote in Ho Chi Minh City.`
 }
 
 export type MemoryAccent = 'cyan' | 'magenta' | 'amber' | 'lime' | 'violet'
