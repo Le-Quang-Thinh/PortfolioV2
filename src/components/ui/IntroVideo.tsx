@@ -53,7 +53,7 @@ export function IntroVideo() {
             muted
             playsInline
             onEnded={dismiss}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
 
           <button
